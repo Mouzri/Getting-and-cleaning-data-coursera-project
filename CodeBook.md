@@ -3,9 +3,9 @@ See the [Readme.md](https://github.com/Mouzri/Getting-and-cleaning-data-coursera
 # The Code Book
 The different variables of the tidy data can be split into two categories:
 * The identifiers
-1. `The subject`.
+1. `The subject`\
 Represent an ID of the performer: integer(from 1 to 30)
-2. `the activity`.
+2. `the activity`\
 Represent the activity of the performer. A factor of six levels:
    - Walking
    - Walking_Upstairs
@@ -13,7 +13,7 @@ Represent the activity of the performer. A factor of six levels:
    - Sitting
    - Standing
    - Laying 
-* The Measurements \
+* The Measurements\
 Represent the different measurements that were taken (Acceleration, Jerk.....). The names were abreviated such that each letter stands for a specific meaning. The following table summarise the variables and their significations.\
 
 
