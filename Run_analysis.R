@@ -1,11 +1,11 @@
-library(reshap2)
+library(reshape2)
 #downloading the data
 if(!file.exists("~/data")){dir.create("~/data")}
 Lnk <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
 download.file(Lnk,destfile = "~/data/data.zip")
 unzip("~/data/data.zip",exdir ="~/data/" )
 ## the read_and_modify function will load the necessary files and add the "subject" and "activity" columns. 
-# Instead of writing a code for each one of the "train" and "test" dataset, we will simply call the function twice
+# Instead of writing a code for each one of the "train" and "test" dataset (and just in order to save space), we will simply call the function twice
 read_and_modify <- function(folder){
         if(folder=="train"){path <-"~/data/UCI HAR Dataset/train/"}
         else if(folder=="test"){path <- "~/data/UCI HAR Dataset/test/"}
@@ -64,8 +64,10 @@ name_trans <- function(x)
 }
 mergeData <- merging_test_train()
 Melt_Merged_data <- melt(mergeData,id.vars = c("subject","activity"))
-result <- dcast(tr1,subject+activity~variable,mean)
+result <- dcast(Melt_Merged_data,subject+activity~variable,mean)
+#Optional, but the result was rounded to three digits
+final_result <- data.frame(result[,c(1,2)],round(result[,-c(1,2)],digits = 3))
 #put the result in a new file called tidy_data
-write.table(result,"~/data/tidy_data.txt")
+write.table(final_result,"~/data/tidy_data.txt",row.names = FALSE)
 #to check
-head(read.table("~/data/tidy_data.txt"))
+head(read.table("~/data/tidy_data.txt",header = TRUE))
