@@ -5,7 +5,7 @@ Lnk <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR
 download.file(Lnk,destfile = "~/data/data.zip")
 unzip("~/data/data.zip",exdir ="~/data/" )
 ## the read_and_modify function will load the necessary files and add the "subject" and "activity" columns. 
-# Instead of writing a code for each one of the "train" and "test" dataset (and just in order to save space), we will simply call the function twice
+# Instead of writing a code for each one of the "train" and "test" dataset, we will simply call the function twice
 read_and_modify <- function(folder){
         if(folder=="train"){path <-"~/data/UCI HAR Dataset/train/"}
         else if(folder=="test"){path <- "~/data/UCI HAR Dataset/test/"}
