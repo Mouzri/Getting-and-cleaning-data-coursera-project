@@ -14,7 +14,7 @@ Represent the activity of the performer. A factor of six levels:
    - Standing
    - Laying 
 ## The Measurements
-Represent the different measurements that were taken (Acceleration, Jerk.....). The names were abreviated such that each letter stands for a specific meaning. The following table summarise the variables and their significations.\
+Represent the different measurements that were taken (Acceleration, Jerk.....). The names were abreviated such that each letter stands for a specific meaning. The following table summarise the variables and their significations.
 
 
 |Letter   |Stands for   |
