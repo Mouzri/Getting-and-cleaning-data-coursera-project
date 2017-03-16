@@ -9,7 +9,9 @@ This repo represent one solution for the *getting and cleaning data* coursera pr
  * Modifies the structure of the data by:
    - Labeling the columns.
    - Adding the "subject" and "activity" columns.
-   - Renaming the activities in each row in the activity column.
-   - Merging the "all" in one dataframe.
- * Selects the variables of interest(i.e subject, activity, mean and standard deviation) from the previous dataframe.
+   - Renaming the activities in each row of the activity column.
+   - Merging all in one dataframe.
+ * Selects the variables of interest(i.e subject, activity, mean and standard deviation) from the previous formed dataframe.
  * Labels the data set with descriptive variable names(see the Codebook.md file).
+ * Finally,creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+The finale data is stored in `tidy_data.txt` file.
