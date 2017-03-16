@@ -1,5 +1,5 @@
 # Getting-and-cleaning-data-coursera-project
-This repo represent one solution for the *getting and cleaning data* coursera project. The task is to modify a set of unordered data to **tidy** one. To do so, an R script named `Run_analysis.R` was generated. The script do the following tasks:
+This repo represent one solution for the *getting and cleaning data coursera project*. The task is to modify a set of unordered data to **tidy** one. To do so, an R script named `Run_analysis.R` was generated. The script do the following tasks:
 * Creates a directory named "Data", downloads the data from [here](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip), and unzips the zip file.
 * Reads the necessary files which include:
   - The X_test and X_train data.
