@@ -1,5 +1,5 @@
 The data, and after being processed, are stored in the `tidy_data.txt` file.\
-See the [Readme.md](https://github.com/Mouzri/Getting-and-cleaning-data-coursera-project/blob/master/README.md) file for background information on this data.\
+See the [Readme.md](https://github.com/Mouzri/Getting-and-cleaning-data-coursera-project/blob/master/README.md) file for background information on this data.
 # The Code Book
 The different variables of the tidy data can be split into two categories:
 * The identifiers
