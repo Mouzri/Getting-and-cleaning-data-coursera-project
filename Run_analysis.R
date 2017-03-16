@@ -1,3 +1,4 @@
+library(reshap2)
 #downloading the data
 if(!file.exists("~/data")){dir.create("~/data")}
 Lnk <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
@@ -62,7 +63,6 @@ name_trans <- function(x)
         x
 }
 mergeData <- merging_test_train()
-library(reshape2)
 Melt_Merged_data <- melt(mergeData,id.vars = c("subject","activity"))
 result <- dcast(tr1,subject+activity~variable,mean)
 #put the result in a new file called tidy_data
